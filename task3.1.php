@@ -20,9 +20,6 @@ FROM `task_for_group_students_lesson`;');
     {
         echo $names = 'id   id задания   id студента' ;
         echo "<p>" . $row['id'] .  "&emsp;" . "&emsp;" . $row['task_id']  . "&emsp;" . "&emsp;" . $row['student_id'] . "</p>";
-
-
-
     }
     ?>
 </body>
