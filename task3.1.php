@@ -11,7 +11,9 @@
 <body>
 <h1>Задание 3.1 </h1>
     <?php
+    //подключение к БД
     $db = new PDO("mysql:host=task;dbname=work", "root", "");
+    //выборка_всех_заданий_студента
     $stmt = $db->query(' SELECT `task_for_group_students_lesson`.`id`, `task_for_group_students_lesson`.`task_id`, `task_for_group_students_lesson`.`student_id`
 FROM `task_for_group_students_lesson`;');
     //Установка fetch mode
